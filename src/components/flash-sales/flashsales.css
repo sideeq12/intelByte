@@ -1,0 +1,54 @@
+.flashsales{
+width: 100vw;
+margin-top: 50px;
+}
+.flashsales .bar{
+    background: #FF5349;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 80px;
+    color : white;
+}
+.flashsales .bar a{
+    text-transform: uppercase;
+}
+
+/* Product Cart styling section */
+
+.flashsales .products{
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+.flashsales .products .product{
+    height: 400px;
+    display: flex;
+    /* align-content: center;
+    justify-content: center; */
+    width: 45vw;
+    background-image: linear-gradient(to right top, #1758FD,#FF5349);
+    justify-content: center;
+    align-items: center;
+
+}
+.flashsales .products .product .description{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    flex-direction: column;
+}
+.flashsales .products .product .description button{
+    width: fit-content;
+    color : black;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 4px;
+    border: none;
+}
+.flashsales .products .product img{
+    width:60%;
+}
