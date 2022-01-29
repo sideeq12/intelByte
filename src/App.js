@@ -1,5 +1,6 @@
 
 import './App.css';
+import { Blue } from './bluelayer/bluelayer';
 import { Flash } from './components/flash-sales/flash-sales';
 import { Products } from './components/products/product';
 import { Recommended } from './components/recommended/recommended';
@@ -12,6 +13,7 @@ const App = () =>{
     <Flash />
     <Products />
     <Recommended />
+    <Blue />
     </div>
   );
 }
