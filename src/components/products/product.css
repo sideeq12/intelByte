@@ -1,15 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Great+Vibes&display=swap');
 .productList{
-    width:  100vw;
+    width: 100%;
     height: fit-content;
     display: flex;
-    gap: 2rem;
     flex-wrap: wrap;
+    background: #EBEBEB;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
 }
 
 .productList .product-cart{
-    width: 200px;
-    border: 1px solid red;
+    width: 250px;
+    background: #FFF;
+    margin : 10px;
+    border-radius: 4px;
 }
 .productList .product-cart img{
     width: 100%;
+}
+.productList .product-cart .product_description{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap : 0.2rem
+}
+.productList .product-cart .product_description label, strike{
+    font-weight: 200;
+}
+.productList .product-cart .product_description label.count{
+    font-size: 15px;
+}
+.productList .product-cart .product_description label.desc{
+    font-weight: 400;
+}
+.productList .special{
+    max-width: 100vw;
+    padding-top: 30px;
+    display: flex;
+    gap: 1rem;
+}
+
+.productList .special .spec{
+    background-image: url("../file.png");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    color: white;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.productList .special .spec img{
+    width: 40%;
+    height: 50%;
+}
+.productList .special .spec .desc{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    gap: 0.4rem;
+    height: fit-content;
+    width: fit-content;
+}
+.productList .special .spec .desc label.btn{
+    border: 1px solid #DDC809;
+    padding: 5px 10px;
+    text-align: center;
+}
+.productList .special .spec .desc label.ct{
+    font-family: "Great Vibes";
+}
+.productList .special .spec .desc b{
+    font-size: 40px;
+}
+.productList .special .spec .desc text{
+    font-weight: bold;
+}
+.productList .special .spec .desc label.shop{
+    text-transform: uppercase;
+    font-weight: medium;
 }

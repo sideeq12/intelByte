@@ -30,7 +30,8 @@ margin-top: 50px;
     /* align-content: center;
     justify-content: center; */
     width: 45vw;
-    background-image: linear-gradient(to right top, #1758FD,#FF5349);
+    background-image: url("./Frame2.png");
+    background-size: cover;
     justify-content: center;
     align-items: center;
 
