@@ -4,11 +4,8 @@ import "./navbar.css"
 export const NavBar = ()=>{
     return(
         <div className='navBar'>
+            <div className='side'>
             <nav>IntelByte</nav>
-            <div className='search'>
-                <input type="text" />
-                <button type="submit">Search</button>
-            </div>
             <div className='menu'>
                 <div className='nav_link'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
@@ -24,6 +21,12 @@ export const NavBar = ()=>{
                     <label> Cart </label>
                 </div>
             </div>
+            </div>
+            <div className='search'>
+                <input type="text" />
+                <button type="submit">Search</button>
+            </div>
+            
         </div>
     )
 }

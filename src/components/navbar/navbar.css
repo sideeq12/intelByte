@@ -3,7 +3,11 @@
     justify-content: center;
     padding: 15px 25px;
 }
-.navBar nav{
+.side {
+    display: flex;
+    gap: 2rem;
+}
+.navBar .side nav{
     font-size: 35px;
     letter-spacing: 1px;
     font-weight: bold;
@@ -29,13 +33,24 @@
     padding: 0px 25px;
     background: #FF5349;
 }
-.navBar .menu{
+.navBar .side .menu{
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
-.navBar .menu .nav_link{
-    /* background: red; */
+
+@media (max-width : 920px) {
+    .navBar{
+        flex-direction: column;
+    }
+    .navBar .search{
+        margin-top: 10px;
+        align-items: flex-start;
+        width: 90%;
+    }
+    .navBar .search input{
+        width: 90%
+    };
 }
