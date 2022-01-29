@@ -4,10 +4,10 @@
     height: 80vh;
     border-radius: 8px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 0px 80px;
     font-family: Raleway;
+    flex-wrap: wrap;
 }
 
 .welcome .side-text h2{
@@ -34,4 +34,26 @@
 .welcome img{
     width: 40%;
     height: 60vh;
+}
+
+
+/* mobile responsive */
+
+@media (max-width : 840px) {
+    .welcome{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+        padding : 0px 0px 20px 30px;
+        width: 100%;
+        height: fit-content;
+    }
+    .welcome img{
+        width: 60%;
+        height: fit-content;
+    }
+    .welcome .side-text{
+        width: 70%;
+        /* display: none; */
+    }
 }

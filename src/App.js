@@ -1,6 +1,6 @@
 
 import './App.css';
-import { Blue } from './bluelayer/bluelayer';
+import { Blue } from './components/bluelayer/bluelayer';
 import { Flash } from './components/flash-sales/flash-sales';
 import { Products } from './components/products/product';
 import { Recommended } from './components/recommended/recommended';

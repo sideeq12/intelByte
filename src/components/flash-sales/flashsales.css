@@ -53,3 +53,23 @@ margin-top: 50px;
 .flashsales .products .product img{
     width:60%;
 }
+
+/* responsiveness */
+
+@media (max-width : 890px) {
+    .flashsales .bar{
+        padding : 10px 40px;
+    }
+    .flashsales .products{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .flashsales .products .product{
+        width: 80%;
+        flex-direction: column-reverse;
+        background-size: cover;
+        align-items: flex-start;
+        padding-left: 40px;
+    }
+}

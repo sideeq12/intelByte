@@ -1,0 +1,73 @@
+.blue{
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 40px;
+}
+.blue .Cover{
+    display: flex;
+    width: 550px;
+    height: 350px;
+    flex-wrap: wrap;
+    background-image: url("./myb.png");
+    background-size: cover;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.blue .Cover .text{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.blue .Cover .image{
+    width: 180px;
+    border-radius: 100%;
+    background: #fff;
+    height: 180px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blue .Cover .text a{
+    font-size: 15px;
+    background: #fff;
+    color: red;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-align: center;
+}
+.blue .Cover .image img{
+    width: 200%;
+}
+
+/* reponsiveness */
+
+@media (max-width : 940px) {
+    .blue {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .blue .Cover{
+        width: 80%;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        padding-top: 40px;
+    }
+    .blue .Cover .image, .blue .Cover .text{
+        width: 80%;
+        margin-left: 0px;
+    }
+    .blue .Cover .image{
+        /* display: none; */
+    }
+}
